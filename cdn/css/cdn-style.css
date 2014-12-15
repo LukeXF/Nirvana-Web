@@ -1,0 +1,565 @@
+/* /////////////////////////////////////////////
+    OVERALL STYLING
+///////////////////////////////////////////// */
+a:hover {
+    text-decoration: none;
+}
+a {
+    text-decoration: none;
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+}
+
+body {
+    background: /* top, transparent rgb(29, 44, 122), faked with gradient */ linear-gradient( rgba(255, 255, 255, 0.82), #FFFFFF ), /* bottom, image */ url(http://puu.sh/aZ1rP/89f025dd7a.png);
+        font-family: 'Lato', sans-serif;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    margin:0;
+    padding:0;
+    height:100%;
+    margin: 0px !important;
+}
+
+.side-button {
+    margin-top: -3px;
+    padding-top: 3px;
+    margin-bottom: 0px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border: 4px;
+    overflow: hidden;
+    position: fixed;
+    z-index: 16000000;
+    height: 30px;
+    right: 36px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.63);
+    box-shadow: 8px 7px 7px rgba(0, 0, 0, 0.25);
+}
+/* /////////////////////////////////////////////
+    NAVBAR STYLING
+///////////////////////////////////////////// */
+
+.nav {
+    /* padding fixes */
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    margin-bottom: -4px !important;
+    font-family: 'Oswald', sans-serif !important;
+}
+
+.navbar-nirvana{
+    /* Holy color! */
+    color: #fff;
+    background-color: #3d566e;
+}
+
+
+.width-nav-nirvana {
+    /* sets the width for the navbar */
+    width: 95%;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Main Navbar settings for Nirvana */
+.nirvana-nav li {
+    position: relative;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.6rem;
+    margin: 10px;
+    vertical-align: middle;
+    min-width: 100px;
+    text-align: center;
+    margin-right: 8px;
+    margin-bottom: 12px;
+    border-radius: 2px;
+    background-color: rgba(201,213,225,.05);
+}
+
+
+.nirvana-nav li > a {
+    /* wording inside navbar li box */
+    font-weight: 400;
+    position: relative;
+    display: block;
+    color: #ecf0f1 !important;
+    background-color: transparent;
+    padding: 14px 31px !important;
+    border-radius: 2px;
+}
+
+.nav > li > a:hover, 
+.nav > li > a:focus {
+    /* on hover of normal navbar li box */
+    text-decoration: none !important;
+    background-color: #6789ab !important;
+    padding: 14px 31px !important;
+}
+
+.nirvana-nav > .active > a {
+    /* if li contains active class */
+    color: #fff !important;
+    background-color: #6789ab !important;
+    padding: 14px 31px !important;
+}
+
+.nirvana-nav > .active > a:hover,
+.nirvana-nav > .active > a:focus {
+    /* on hover of active class */
+    color: #fff !important;
+    background-color: #759FCA !important;
+    padding: 14px 31px !important;
+}
+
+
+
+
+/* Mobile settings for Nirvana */
+@media (min-width: 768px !important)
+.navbar-toggle {
+    /* detects width */
+    display: block !important;
+}
+
+@media (max-width: 900px)
+.navbar-toggle {
+    /* detects width */
+    display: block !important;
+}
+
+.navbar-toggle {
+    /* right side navbar drop down */
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 8px;
+    margin-right: 33px;
+    margin-bottom: 8px;
+    background-color: rgba(179, 122, 122, 0);
+    background-image: none;
+    border: 1px solid rgba(255, 255, 255, 0.65);
+    border-radius: 4px;
+}
+
+
+.navbar-toggle .icon-bar {
+    /* the three bars on mobile view */
+    display: block;
+    width: 30px;
+    height: 3px;
+    border-radius: 1px;
+    background-color: #fff;
+    }
+
+
+
+/* General fixes */
+
+ul > li > a > b {
+    /* Makes users name bold */
+    position: inherit;
+    font-weight: 400;
+}
+
+ul > li > a > img {
+    /* positioning fix for users image */
+    position: inherit;
+    top: -2px !important;
+}
+
+ul > li > a > b:after {
+    /* for future use */
+    content: '';
+}
+
+
+
+/* Dropdown */
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+    background-color: #6789ab !important;
+    border-color: #428bca !important;
+}
+
+.dropdown-menu {
+    background-color: #5980A7 !important;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15) !important;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    margin-top: 5px;
+}
+
+.dropdown-menu > li {
+    background-color: #3d566e;
+}
+
+.dropdown-menu > li:hover{
+    background-color: #70A1D1;
+}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+    color: #262626;
+    text-decoration: none;
+    background-color: #70A1D1 !important;
+}
+
+.dropdown-menu .divider {
+    background-color: rgba(61, 86, 110, 0.33) !important;
+}
+/* /////////////////////////////////////////////
+    NOTIFICATION SYSTEM STYLING
+///////////////////////////////////////////// */
+.notice-green {
+    border-color: rgba(184, 255, 94, 0.66) !important;
+    border-top-width: 5px;
+    border: solid;
+    margin-top: 7px !important;
+}
+
+
+
+/* /////////////////////////////////////////////
+    CONTENT STYLING
+///////////////////////////////////////////// */
+
+.content {
+    position: relative;
+    border-radius: 2px;
+    color: rgb(68, 68, 68);
+    background-color: rgb(255, 255, 255);
+    -webkit-box-shadow: rgba(0, 0, 0, 0.247059) 0px 1px 2px;
+    box-shadow: rgba(0, 0, 0, 0.247059) 0px 1px 2px;
+    padding: 24px;
+    margin-bottom: 20px;
+}
+
+.content > h1, .content > div > div > h1 {
+    margin-top: -1px;
+    margin-bottom: 24px;
+    padding-bottom: 12px;
+    border-bottom: 4px solid #6789ab;
+    color: #666;
+    font-family: 'Oswald', sans-serif;
+}
+
+.panel-heading {
+    color: #FFF !important;
+    background-color: rgba(61, 86, 110, 0.81) !important;
+}
+
+h4.greystuff > a > b {
+    text-transform: uppercase;
+    color: #999;
+}
+
+
+
+
+/* /////////////////////////////////////////////
+    LOGGED IN ACCOUNT PAGE STYLING
+///////////////////////////////////////////// */
+.verified {
+
+}
+
+
+
+
+
+
+/* /////////////////////////////////////////////
+    NOT LOGGED IN STYLING
+///////////////////////////////////////////// */
+
+.login-container{
+    position: relative;
+    width: 300px;
+    margin: 80px auto;
+    padding: 20px 40px 40px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
+#output{
+    position: absolute;
+    width: 300px;
+    top: -75px;
+    left: 0;
+    color: #fff;
+}
+
+#output.alert-success{
+    background: rgb(25, 204, 25);
+}
+
+#output.alert-danger{
+    background: rgb(228, 105, 105);
+}
+
+
+.avatar {
+width: 100px;
+height: 100px;
+margin: 10px auto 30px;
+border-radius: 100%;
+border: 2px solid #aaa;
+background-size: cover;
+background: url(https://minotar.net/avatar/char/95);
+}
+
+.form-box input{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    height:40px;
+    border: 1px solid #ccc;;
+    background: #fafafa;
+    transition:0.2s ease-in-out;
+
+}
+
+.form-box input:focus{
+    outline: 0;
+    background: #eee;
+}
+
+.form-box input[type="text"]{
+    border-radius: 5px 5px 0 0;
+    text-transform: lowercase;
+}
+
+.form-box input[type="password"]{
+    border-radius: 0 0 5px 5px;
+    border-top: 0;
+}
+
+.form-box button.login{
+    margin-top:15px;
+    padding: 10px 20px;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+input#txtSelectedValues {
+    border: 0;
+}
+
+.page-main > .content > h5 {
+    position: absolute;
+    top: 0;
+    float: right;
+    right: 0;
+    margin-top: 20px;
+    margin-right: 26px;
+    opacity: 0.5;
+}
+
+.page-main > .content > h5 > div > div {
+    font-size: 10px;
+    text-align: right;
+    margin-left: -6px;
+    padding-left: 20px;
+}
+
+.page-main > .content > h5 > div > div > button, .page-main > .content > h5 > div > div > input {
+    margin-bottom: 3px;
+    pointer-events: none;
+    cursor: default;
+    text-align: center;
+}
+.page-main > .content > h5 > div > div:before {
+    margin-left: 20px;
+}
+.page-main > .content > h5 > .row {
+    width: 800px;
+    margin-right: -175px;
+}
+/* /////////////////////////////////////////////
+    FOOTER STYLING
+///////////////////////////////////////////// */
+
+div#footer {
+    color: #fff;
+    margin-top: 60px;
+    background-color: #3d566e;
+    padding: 10px;
+    text-align: center;
+    width:100%;
+    position:absolute;
+    bottom:0;
+    left:0;
+}
+
+.footerbreak {
+    padding-bottom: 100px;
+}
+
+h3.white {
+    font-size: 40px;
+}
+
+p.white.pad {
+    font-size: 20px;
+}
+
+.greyinfo > h3 {
+    margin-top: -9px;
+    margin-bottom: 20px;
+}
+
+
+.form-control-small {
+    width: 50% !important;
+    display: -webkit-inline-box;
+    margin-bottom: 12.5px;
+    margin-top: -10px;
+}
+
+.readysend-false, .readysend-false:hover{
+    background-color: #c9302c !important;
+    cursor: default !important;
+}
+
+.background-1 {
+    font-size: 1px;
+    color: white;
+}
+
+.background-1:before {
+    content: "True";
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+}
+.background-0 {
+    font-size: 1px;
+    color: white;
+}
+
+.background-0:before {
+    content: "False";
+    font-size: 15px;
+    color: #999;
+}
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1 {
+    font-family: Lato !important;
+    font-weight: 100 !important;
+    text-align: center;
+
+}
+* {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+h3, p, h1, h4, span {
+    color: #555;
+}
+.logo {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+.pad {
+    padding: 10px;
+}
+.thin {
+    font-weight: 300 !important;
+}
+.side-button {
+    margin-top: -3px;
+    padding-top: 3px;
+    margin-bottom: 0px;
+    padding-left: 9px;
+    padding-right: 10px;
+    border: 4px;
+    overflow: hidden;
+    position: fixed;
+    font-size: 11px;
+    z-index: 16000000;
+    height: 30px;
+    right: -4px;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.69);
+    box-shadow: -1px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.oldbody {
+    background: /* top, transparent rgb(29, 44, 122), faked with gradient */ linear-gradient( rgba(255, 255, 255, 0.52), rgba(255, 255, 255, 0.49) ), /* bottom, image */  url(http://i.imgur.com/wDjdwGM.jpg);
+                
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+table {
+    text-align: center;
+}
+
+td {
+    padding: 3px;
+    font-size: 15px;
+}
+td.left {
+    text-align: right;
+    width: 50%;
+}
+td.right {
+    text-align: left;
+    width: 50%;
+}
+
+tbody, table {
+    width: 100%;
+}

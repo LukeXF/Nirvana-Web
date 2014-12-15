@@ -1,0 +1,261 @@
+/* Buycraft theme by Luke. Because I love you, yes you. */
+body {
+	font-family: 'Lato', sans-serif;
+	background-color: transparent !important;
+	overflow: hidden;
+}
+label {
+	font-family: 'Lato', sans-serif !important;
+	vertical-align: middle;
+}
+main {
+	width: 500px;
+	margin: auto;
+	display: table;
+}
+
+h1, h3, .h3 {
+	font-weight: 100;
+	padding-left: 15px;
+	font-size: 25px;
+	font-family: 'Dosis', sans-serif !important;
+	text-transform: uppercase !important;
+	padding: 2px;
+	margin-top: 5px !important;
+}
+span.h3 {
+	font-family: 'Dosis';
+}
+span {
+	
+}
+button, input {
+	background-color: rgba(219, 219, 219, 0.21);
+	padding: 5px 10px 5px 10px;
+	border: 1px rgba(153, 153, 153, 0.32) solid;
+	border-radius: 4px;
+	font-family: 'Dosis', sans-serif !important;
+	color: #777;
+}
+
+a.back_btn {
+	padding: 5px 10px 5px 10px;
+	font-size: 14px !important;
+	height: 20px;
+}
+a.back_btn:hover, button:hover, input:hover {
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.back_btn {
+	padding: 4px;
+	color: #333;
+	font-weight: 400;
+	background: transparent;
+	border: solid 2px;
+	border-radius: 5px;
+	opacity: 0.4;
+	vertical-align: middle;
+	font-family: 'Lato', sans-serif !important;
+}
+
+.gateway-submit {
+	background: url('http://store.nirvanamc.com/assets/img/gateways/1.png');
+	width: 101px;
+	border: none;
+	height: 66px;
+	background: no-repeat;
+	min-width: 113px;
+}
+
+thead > tr {
+	font-family: 'Dosis';
+	text-transform: uppercase;
+	text-align: center;
+}
+
+input {
+	width: 30px;
+	text-align: center;
+	border-radius: 3px;
+	padding: 5px;
+}
+
+strong > a {
+	color: #333;
+	text-decoration: none;
+}
+i.fa {
+	color: #444;
+}
+
+.fa-refresh:before {
+	content: "\f021";
+	color: #777;
+}
+button.button.fa.fa-refresh {
+	color: transparent;
+	background-color: transparent;
+	border: transparent;
+}
+button > .button {
+	vertical-align: middle;
+
+}
+tbody, thead {
+	font-size: 11px;
+}
+td {
+	border-top: 1px solid rgba(238, 238, 238, 0.5);
+}
+::-webkit-input-placeholder {
+	 color: #777;
+	 font-size: 11.5px;
+	vertical-align: middle;
+	padding-top: 2px;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+	color: #777;
+	font-size: 11.5px;
+	vertical-align: middle;
+	padding-top:23px;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+	color: #777;
+	font-size: 11.5px ;
+	vertical-align: middle;
+	padding-top:23px;
+}
+
+:-ms-input-placeholder {  
+	color: #777;
+	font-size: 11.5px;
+	vertical-align: middle;
+	padding-top:23px;
+}
+.accept {
+	margin: auto;
+}
+
+.package_love {
+	margin-top: 10px;
+}
+
+
+.shade {
+	font-size: 18px;
+	text-align: center;
+	line-height: 1.42857143;
+	display: -webkit-inline-box;
+	background: rgba(34, 34, 34, 0.24);
+	max-width: 500px;
+	border-radius: 7px;
+	padding: 16px;
+	padding-left: 11px;
+	margin-left: 0px !important;
+}
+
+.shade > .col-xs-4 > img {
+	width: 100%;
+}
+
+.shade > div > h3 {
+	text-align: left;
+}
+
+p {
+	text-align: left !important;
+}
+
+span {
+	font-family: 'Lato', sans-serif !important;
+}
+button.back_btn {
+	font-size: 14px;
+}
+
+.col-xs-8 {
+	padding: 0px !important;
+}
+
+button.back_btn.pck {
+	font-size: 13.5px;
+	min-width: 100px;
+	padding: 4px;
+	padding-bottom: 2px;
+}
+.gotopay {
+	height: 34px;
+	float: right;
+	padding-left: 15px;
+	font-family: 'Dosis' !important;
+	font-size: 23px;
+	margin-top: -7px !important;
+}
+
+.total {
+	display: -webkit-box;
+	margin: 9px;
+	height: 50px;
+	float: right;
+	min-width: 275px;
+	margin-right: 3px !important;
+	padding: 5px;
+}
+.total2 {
+	display: -webkit-box;
+	margin: 9px;
+	height: 50px;
+	float: left;
+	min-width: 150px;
+	margin-right: 3px !important;
+}
+button.back:hover, a.back:hover {
+	border: 1px solid rgba(153, 153, 153, 0.43);
+	text-decoration: none;
+	font-weight: bold;
+	color: #333;
+}
+button.back, a.back {
+	background-color: rgba(219, 219, 219, 0.21);
+	padding: 5px 10px 7px 10px !important;
+	border: 1px rgba(153, 153, 153, 0.32) solid;
+	border-radius: 4px;
+	font-size: 14px !important;
+	min-width: 80px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #333;
+	font-family: 'Dosis' !important;
+	height: 31px !important;
+	vertical-align: -webkit-baseline-middle;
+}
+.desc_of_DOOM {
+	overflow: auto;
+	height: 220px;
+}
+
+.desc_of_DOOM::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+/* Track */
+.desc_of_DOOM::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(51, 51, 51, 0.7); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+/* Handle */
+.desc_of_DOOM::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(51, 51, 51. 1); 
+    -webkit-box-shadow: inset 0 0 6px rgba(51, 51, 51, 0.7); 
+}
+.desc_of_DOOM::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(51, 51, 51, 0.4); 
+}

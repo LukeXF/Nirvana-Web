@@ -1,0 +1,172 @@
+body {
+	background: 
+	/* top,transparent rgba(0, 0, 0, 0.83),
+		faked with gradient */ linear-gradient( rgba(2, 62, 76, 1),
+		rgba(3, 63, 81, 0.94)
+	),
+	 /* bottom, image */ url(http://puu.sh/aZ1rP/89f025dd7a.png);
+	font-family: 'Lato', sans-serif;
+	background-size: cover;
+	background-position: center center;	
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	color: white;
+	padding-bottom: 50px;
+}
+nav {
+	margin-bottom: 100px;
+}
+* {
+	color: white !important;
+}
+input {
+	margin: 7px; padding: 5px; background: rgba(255, 255, 255, 0.37);
+	border: 1px solid transparent;
+}
+button {
+	background: rgba(92, 92, 92, 0.33);
+	border: 1px solid rgba(255, 255, 255, 0.27);
+	margin: 7px;
+	padding: 8px;
+	border-radius: 5px;
+	font-size: 11px;
+}
+pre {
+	background: transparent;
+	border: 1px solid transparent;
+	text-align: left !important;
+}
+.center {
+	text-align: center;
+}
+.tile {
+	background-color: rgba(238, 238, 238, 0.07);
+	color: #CFCFCF !important;
+	padding: 16px;
+	font-size: 21px;
+	font-weight: 300;
+	border-radius: 3px;
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 5px;	
+	min-height: 92px;
+}
+h1 {
+	color: white;
+	text-transform: uppercase;
+	font-weight: 100;
+}
+button.main {
+	background: rgba(92, 92, 92, 0.1);
+	border: 1px solid rgba(255, 255, 255, 0.24);
+	margin: 7px;
+	padding: 4px 8px 4px 8px;
+	border-radius: 5px;
+	font-size: 20px;
+}
+.alert-success {
+	color: white;
+	font-size: 18px;
+	text-align: center;
+	display: table;
+	height: 49px;
+	margin: auto;
+	border: 1px solid rgba(255, 255, 255, 0.24);
+	background-color: rgba(238, 238, 238, 0.07);
+}
+.alert-success > strong {
+	color: white !important;
+}
+.close > span {
+	color: black !important;
+}
+.alert-dismissible .close {
+	position: relative;
+	top: -2px;
+	right: -21px;
+	color: inherit;
+	margin-top: 2px;
+	margin-bottom: -10px;
+}
+.alert-success > a {
+	color: #FFFFFF !important;
+	font-weight: 100;
+}
+.formbox {
+	padding-right: 30px;
+}
+pre > h1 {
+	font-family: Lato, sans-serif;
+	font-size: 19px;
+	border-top: 1px solid rgba(255, 255, 255, 0.12);
+	line-height: 35px;
+}
+hr {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	border: 0;
+	border-top: 1px solid rgba(238, 238, 238, 0.16);
+}
+.panel {
+background: rgba(92, 92, 92, 0.1);
+border: 1px solid rgba(255, 255, 255, 0.24);
+}
+.panel-heading{
+	color: #FFF !important;
+	background-color: transparent !important;
+} 
+.panel-heading > * > *{
+	font-weight: 100;
+	font-family: Lato, sans-serif;
+	font-size: 19px;
+	line-height: 35px;
+	text-transform: uppercase;
+}
+.panel-group .panel-heading+.panel-collapse>.panel-body {
+	border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+button.main.in {
+	width: 100%;
+	margin-left: 1px;
+	padding: 15px;
+	text-transform: uppercase;
+	font-size: 19px;
+}
+
+pre {
+	background: transparent;
+	border: 1px solid transparent;
+	text-align: left !important;
+	font-size: 11.5px;
+	font-weight: 400;
+	font-family: Lato;
+}
+.panel-body > pre {
+	max-height: 250px;
+	overflow: auto;
+}
+/* Let's get this party started */
+.panel-body > pre::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+/* Track */
+.panel-body > pre::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(3, 63, 81, 0.7); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+/* Handle */
+.panel-body > pre::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgb(61, 86, 110); 
+    -webkit-box-shadow: inset 0 0 6px rgba(3, 63, 81); 
+}
+.panel-body > pre::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(3, 63, 81, 0.4); 
+}
